@@ -3,13 +3,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta charset="UTF-8">
     <title>Inscription</title>
 </head>
 <body>
 <div class="main">
-    <img src="img/cadenas (1).png" alt="" class="locker">
+    <img src="../img/cadenas%20(1).png" alt="" class="locker">
     <h1>Inscription</h1>
     <form action="inscription.php" method="post">
 
@@ -28,7 +28,7 @@
 </body>
 <?php
 
-require_once 'config.php';
+require_once 'Model/config.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nom = $_POST["nom"];

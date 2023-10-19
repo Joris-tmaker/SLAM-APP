@@ -7,7 +7,7 @@
 <body>
     <h2>Bienvenue sur la page d'accueil</h2>
     <a href="">Acceuil</a>
-    <form method="post" action="logout.php">
+    <form method="post" action="../Model/logout.php">
         <input type="submit" value="logout">
     </form>
     

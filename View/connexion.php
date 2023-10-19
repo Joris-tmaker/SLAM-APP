@@ -3,12 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Page de Connexion</title>
 </head>
 <body>
 <div class="main">
-    <img src="img/cadenas (1).png" alt="" class="locker">
+    <img src="../img/cadenas%20(1).png" alt="" class="locker">
     <h1>Connexion</h1>
     <form method="post" action="connexion.php">
         <input class="user" placeholder="Adresse Email" type="email" id="email" name="email" required><br><br>
@@ -23,7 +23,7 @@
 
 <?php
 
-require_once "config.php";
+require_once "Model/config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
