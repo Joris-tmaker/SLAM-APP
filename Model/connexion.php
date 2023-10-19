@@ -1,6 +1,6 @@
 <?php
 
-require_once "Model/config.php";
+require_once "config.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if ($utilisateur && password_verify($mot_de_passe, $utilisateur['mot_de_passe'])) {
             echo "Vous êtes authentifié !";
-            header("Location: index.php");
+            header("Location: ../View/index.php");
             exit();
         } else {
             echo "<script type='text/javascript' >window.alert('Pseudo ou mot de passe incorrect') </script>";
