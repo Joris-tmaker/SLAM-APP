@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../assets/style.css">
     <meta charset="UTF-8">
     <title>Inscription</title>
 </head>
