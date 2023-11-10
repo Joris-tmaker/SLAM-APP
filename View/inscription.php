@@ -21,6 +21,8 @@
 
         <input class="pass" placeholder="Mot de passe" type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
 
+        <input class="pass" placeholder="Role" type="text" id="role" name="role" required><br><br>
+
         <input class="btn" type="submit" value="S'inscrire">
     </form>
 </div>

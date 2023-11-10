@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 
 <!DOCTYPE html>
 <html>
@@ -13,10 +13,12 @@
     <form method="post" action="../Model/connexion.php">
         <input class="user" placeholder="Adresse Email" type="email" id="email" name="email" required><br><br>
 
-        <input class="pass" placeholder="Mot de passe" type="password" id="mot_de_passe" name="mot_de_passe" required><br><br>
+        <input class="pass" placeholder="Mot de passe" type="password" id="mot_de_passe" name="mot_de_passe"
+               required><br><br>
 
         <input class="btn" type="submit" name="submit" value="Login">
     </form>
+    <p>Vous êtes nouveau et souhaitez vous inscrire : <br> <a href="inscription.php">Cliquez ici</a></p>
 </div>
 </body>
 </html>

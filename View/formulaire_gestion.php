@@ -5,7 +5,7 @@
     <!-- Inclure les fichiers CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Lier votre fichier CSS personnel -->
-    <link rel="stylesheet" href="../assets/style-formulaire.css">
+    <link rel="stylesheet" href="../assets/form-gestion.css">
 </head>
 <body>
     <div class="container">

@@ -1,6 +1,8 @@
 <?php
 
-require_once "config.php";
+session_start();
+
+require_once "bdd.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -17,13 +19,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute([$email]);
         $utilisateur = $stmt->fetch();
 
+        $_SESSION['user'] = $utilisateur;
+
         if ($utilisateur && password_verify($mot_de_passe, $utilisateur['mot_de_passe'])) {
             echo "Vous êtes authentifié !";
-            header("Location: ../View/index.php");
+            header("Location: ../View/homepage.php");
             exit();
         } else {
             echo "<script type='text/javascript' >window.alert('Pseudo ou mot de passe incorrect') </script>";
         }
     }
 }
-?>
