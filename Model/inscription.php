@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $_SESSION['user'] = $utilisateur;
 
-        header("Location: ../View/connexion.php");
+        header("Location: ../View/admin.php");
         exit();
     }
 }
