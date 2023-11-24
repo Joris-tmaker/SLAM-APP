@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter vos Comptes-Rendus</h5>
                     <p class="card-text">Consultez vos propres comptes-rendus de visite.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="affiche-cr.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
