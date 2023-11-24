@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter vos Comptes-Rendus</h5>
                     <p class="card-text">Consultez vos propres comptes-rendus de visite.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="affiche-cr.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter les Comptes-Rendus de Votre Région</h5>
                     <p class="card-text">Consultez les comptes-rendus de visite de votre région.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="affiche-cr-region.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
@@ -37,7 +37,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Créer de Nouveaux Comptes-Rendus</h5>
                     <p class="card-text">Créez de nouveaux comptes-rendus de visite.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="compte-rendu.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>

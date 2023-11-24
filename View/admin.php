@@ -24,7 +24,7 @@
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Gestion des Utilisateurs</h5>
+                    <h5 class="card-title">Modification des Utilisateurs</h5>
                     <p class="card-text">Administrez les utilisateurs de l'application.</p>
                     <a href="save-user.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>

@@ -17,19 +17,19 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter les Comptes-Rendus par Région</h5>
                     <p class="card-text">Consultez les comptes-rendus de visite par région.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="affiche-cr-region.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-6 col-lg-4 mb-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Consultation des Statistiques</h5>
-                    <p class="card-text">Accédez aux statistiques et données de performance.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
-                </div>
-            </div>
-        </div>
+<!--        <div class="col-md-6 col-lg-4 mb-4">-->
+<!--            <div class="card">-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Consultation des Statistiques</h5>-->
+<!--                    <p class="card-text">Accédez aux statistiques et données de performance.</p>-->
+<!--                    <a href="#" class="btn btn-primary btn-block">Accéder</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="col-md-6 col-lg-4 mb-4">
             <div class="card">
                 <div class="card-body">
