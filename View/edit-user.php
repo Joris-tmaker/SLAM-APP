@@ -1,19 +1,5 @@
 <?php
-session_start();
-require_once 'bdd.php';
-
-if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
-    $userId = $_GET["id"];
-
-    try {
-        $sql = "SELECT id_user, nom, prenom, role FROM user WHERE id_user = ?";
-        $stmt = $connexion->prepare($sql);
-        $stmt->execute([$userId]);
-        $user = $stmt->fetch(PDO::FETCH_ASSOC);
-    } catch (PDOException $e) {
-        echo "Erreur lors de la récupération des informations de l'utilisateur : " . $e->getMessage();
-    }
-}
+require_once ('../Model/edit-user-form.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
 <div class="container">
     <h2 class="text-center">Modifier Utilisateur</h2>
 
-    <form action="edit-user-process.php" method="post">
+    <form action="../Model/edit-user-process.php" method="post">
         <input type="hidden" name="id_user" value="<?php echo $user['id_user']; ?>">
 
         <div class="form-group">

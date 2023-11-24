@@ -3,8 +3,27 @@
 session_start();
 
 if (!empty($_SESSION['user'])) {
-    header('Location: View/homepage.php');
+    $role = $_SESSION['user']['role'];
+//    var_dump($role);die();
+
+    switch ($role) {
+        case 'role_admin':
+            header('Location: Controller/AdminController.php');
+            exit;
+        case 'role_delegue':
+            header('Location: Controller/DelegueController.php');
+            exit;
+        case 'role_responsable':
+            header('Location: Controller/ResponsableController.php');
+            exit;
+        case 'role_visiteur':
+            header('Location: Controller/VisiteurController.php');
+            exit;
+        default:
+            header('Location: View/connexion.php'); // Redirection par défaut si le rôle n'est pas géré
+            exit;
+    }
 } else {
     header('Location: View/connexion.php');
+    exit;
 }
-exit;

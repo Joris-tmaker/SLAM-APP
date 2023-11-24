@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,7 @@
     <!-- Inclure les fichiers CSS de Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Lier votre fichier CSS personnel -->
-    <link rel="stylesheet" href="style-formulaire.css">
+    <link rel="stylesheet" href="../assets/style-formulaire.css">
 </head>
 <body>
 <div class="container">
@@ -59,6 +60,7 @@
             </div>
         </div>
     </div>
+    <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
 </div>
 
 <!-- Inclure les fichiers JavaScript de Bootstrap -->
