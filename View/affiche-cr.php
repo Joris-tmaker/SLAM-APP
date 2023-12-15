@@ -27,6 +27,8 @@
 
 <div class="container">
     <h2 class="text-center">Mes comptes Rendus</h2>
+    <a href="../index.php">Page d'accueil</a>
+    <br>
     <?php
     require_once "../Model/affiche-cr.php";
     ?>

@@ -59,6 +59,24 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Ajouter un nouveau médecin</h5>
+                    <p class="card-text">Ajouter un nouveau médecin</p>
+                    <a href="ajouter-medecin.php" class="btn btn-primary btn-block">Accéder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Afficher les médecins</h5>
+                    <p class="card-text">Afficher tous les médecins.</p>
+                    <a href="afficher-medecin.php" class="btn btn-primary btn-block">Accéder</a>
+                </div>
+            </div>
+        </div>
     </div>
     <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
 </div>

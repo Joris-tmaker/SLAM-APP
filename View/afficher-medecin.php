@@ -26,11 +26,11 @@
 <body>
 
 <div class="container">
-    <h2 class="text-center">Les comptes Rendus de Régions</h2>
+    <h2 class="text-center">Tous les médecins</h2>
     <a href="../index.php">Page d'accueil</a>
     <br>
     <?php
-    require_once "../Model/affiche-cr-region.php";
+    require_once "../Model/afficher-medecin.php";
     ?>
 </div>
 

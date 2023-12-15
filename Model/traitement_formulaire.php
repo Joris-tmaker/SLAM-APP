@@ -23,5 +23,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $connexion->prepare($requete);
     $stmt->execute([$id_user, $date_visite, $date_contre_visite, $motif_visite, $remarques, $nom_praticien, $produit, $refus_produit, $quantite_distribuee]);
 
-    header("Location: ../View/visiteur.php");
+    header("Location: ../index.php");
 }
