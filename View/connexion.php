@@ -16,9 +16,9 @@
         <input class="pass" placeholder="Mot de passe" type="password" id="mot_de_passe" name="mot_de_passe"
                required><br><br>
 
-        <input class="btn" type="submit" name="submit" value="Login">
+        <input class="btn" type="submit" name="submit" value="Connexion">
     </form>
-    <p>Vous êtes nouveau et souhaitez vous inscrire : <br> <a href="inscription.php">Cliquez ici</a></p>
+    <a href="../Model/logout.php">Déconnexion</a>
 </div>
 </body>
 </html>
