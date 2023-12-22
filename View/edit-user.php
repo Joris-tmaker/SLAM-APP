@@ -34,7 +34,6 @@ require_once ('../Model/edit-user-form.php');
         <div class="form-group">
             <label for="role">Rôle:</label>
             <select class="form-control" id="role" name="role" required>
-                <option value="role_admin" <?php if ($user['role'] == 'role_admin') echo 'selected'; ?>>role_admin</option>
                 <option value="role_visiteur" <?php if ($user['role'] == 'role_visiteur') echo 'selected'; ?>>role_visiteur</option>
                 <option value="role_delegue" <?php if ($user['role'] == 'role_delegue') echo 'selected'; ?>>role_delegue</option>
                 <option value="role_responsable" <?php if ($user['role'] == 'role_responsable') echo 'selected'; ?>>role_responsable</option>

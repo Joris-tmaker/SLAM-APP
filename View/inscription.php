@@ -1,4 +1,6 @@
-<?php session_start(); ?>
+<?php session_start();
+
+require_once '../Model/bdd.php'?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -8,9 +10,9 @@
     <title>Inscription</title>
 </head>
 <body>
-<div class="main">
+<div id="utilisateur" class="main">
     <img src="../img/cadenas%20(1).png" alt="" class="locker">
-    <h1>Inscription</h1>
+    <h1>Ajout utilisateur</h1>
     <form action="../Model/inscription.php" method="post">
 
         <input class="pass" placeholder="Nom" type="text" id="nom" name="nom" required><br><br>
@@ -23,7 +25,23 @@
 
         <input class="pass" placeholder="Role" type="text" id="role" name="role" required><br><br>
 
+        <label style="padding-top: 20px; padding-bottom: 20px" for="region">Région :</label>
+        <select id="region" name="region">
+            <?php
+
+            $query = "SELECT id_region, region FROM region";
+            $stmt = $connexion->query($query);
+
+            while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                echo "<option value='" . $row["id_region"] . "'>" . $row["region"] . "</option>";
+            }
+            ?>
+        </select>
+
+
         <input class="btn" type="submit" value="S'inscrire">
+
+        <a href="../index.php">Page d'accueil</a>
     </form>
 </div>
 

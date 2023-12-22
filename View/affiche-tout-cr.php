@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modification d'utilisateur</title>
+    <title>Responsable affiche région</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style-formulaire.css">
     <style>
-        body {
-            padding: 20px;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        /* Style pour chaque élément carré */
+        .grid-item {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: left;
+            overflow: hidden; /* Limiter le débordement */
+            word-wrap: break-word; /* Couper les mots longs */
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h2 class="text-center">Modification d'utilisateur</h2>
-        <a href="../index.php">Page d'accueil</a>
+    <h2 class="text-center">Tous les comptes rendus</h2>
+    <a href="../index.php">Page d'accueil</a>
+    <br>
     <?php
-    require_once "../Model/save-user.php";
+    require_once "../Model/affiche-tout-cr.php";
     ?>
-
-
 </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

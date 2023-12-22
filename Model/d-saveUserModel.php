@@ -1,17 +1,17 @@
 <?php
 session_start();
 require_once "bdd.php";
+require_once "d-SuprimerUtilisateurModel.php";
 
-// Récupération des utilisateurs depuis la base de données
-$sql = "SELECT id_user, nom, prenom, role, id_region FROM user";
-if (isset($connexion)){
+$sql = "SELECT id_user, nom, prenom, role FROM user WHERE role IN ('role_visiteur', 'role_delegue')";
+if (isset($connexion)) {
     $result = $connexion->query($sql);
 }
-//var_dump($result);die();
 if ($result->rowCount() > 0) {
     echo '<table class="table table-striped table-bordered table-responsive">';
-    echo '<thead class="thead-white">';
+    echo '<thead class="thead-dark">';
     echo '<tr>';
+    echo '<th>ID</th>';
     echo '<th>Nom</th>';
     echo '<th>Prénom</th>';
     echo '<th>Rôle</th>';
@@ -22,11 +22,19 @@ if ($result->rowCount() > 0) {
 
     while ($row = $result->fetch()) {
         echo '<tr>';
+        echo '<td>' . $row['id_user'] . '</td>';
         echo '<td>' . $row['nom'] . '</td>';
         echo '<td>' . $row['prenom'] . '</td>';
         echo '<td>' . $row['role'] . '</td>';
-        echo '<td>' . $row['id_region'] . '</td>';
-        echo '<td><a class="btn" href="../Model/edit-user-form.php?id=' . $row['id_user'] . '">Modifier</a></td>';
+        echo '<td>';
+        
+        echo '<a class="btn btn-warning" href="d-ModificationUtilisateursView.php?id=' . $row['id_user'] . '">Modifier</a>';
+        
+        if (strcasecmp($row['role'], 'role_visiteur') == 0) {
+            echo '<a class="btn btn-danger" href="?id=' . $row['id_user'] . '">Supprimer</a>';
+        }
+    
+        echo '</td>';
         echo '</tr>';
     }
 
@@ -37,3 +45,4 @@ if ($result->rowCount() > 0) {
 }
 
 $connexion = null;
+?>

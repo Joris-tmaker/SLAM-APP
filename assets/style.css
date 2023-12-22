@@ -54,6 +54,19 @@ h1 {
     color: #000000;
 }
 
+#utilisateur h1 {
+    width: 200px;
+    height: 70px;
+    text-align: center;
+
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #000000;
+}
+
 .user {
     border: none;
     outline: none;

@@ -7,9 +7,6 @@ if (!empty($_SESSION['user'])) {
 //    var_dump($role);die();
 
     switch ($role) {
-        case 'role_admin':
-            header('Location: Controller/AdminController.php');
-            exit;
         case 'role_delegue':
             header('Location: Controller/DelegueController.php');
             exit;
