@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modification d'utilisateur</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style-formulaire.css">
     <style>
         body {
             padding: 20px;
@@ -15,6 +16,7 @@
 
 <div class="container">
     <h2 class="text-center">Modification d'utilisateur</h2>
+        <a href="../index.php">Page d'accueil</a>
     <?php
     require_once "../Model/save-user.php";
     ?>

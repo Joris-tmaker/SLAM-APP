@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
     $userId = $_GET["id"];
 
     try {
-        $sql = "SELECT id_user, nom, prenom, role FROM user WHERE id_user = ?";
+        $sql = "SELECT id_user, nom, prenom, role, id_region FROM user WHERE id_user = ?";
         $stmt = $connexion->prepare($sql);
         $stmt->execute([$userId]);
         $user = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier Utilisateur</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style-formulaire.css">
     <style>
         body {
             padding: 20px;
@@ -46,9 +47,19 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
         </div>
 
         <div class="form-group">
+            <label for="role">Région:</label>
+            <select class="form-control" id="region" name="region" required>
+                <option value="1" <?php if ($user['id_region'] == 'Nord') echo 'selected'; ?>>Nord</option>
+                <option value="2" <?php if ($user['id_region'] == 'Sud') echo 'selected'; ?>>Sud</option>
+                <option value="3" <?php if ($user['id_region'] == 'Est') echo 'selected'; ?>>Est</option>
+                <option value="4" <?php if ($user['id_region'] == 'Ouest') echo 'selected'; ?>>Ouest</option>
+                <option value="5" <?php if ($user['id_region'] == 'Paris Centre') echo 'selected'; ?>>Paris Centre</option>
+            </select>
+        </div>
+
+        <div class="form-group">
             <label for="role">Rôle:</label>
             <select class="form-control" id="role" name="role" required>
-                <option value="role_admin" <?php if ($user['role'] == 'role_admin') echo 'selected'; ?>>role_admin</option>
                 <option value="role_visiteur" <?php if ($user['role'] == 'role_visiteur') echo 'selected'; ?>>role_visiteur</option>
                 <option value="role_delegue" <?php if ($user['role'] == 'role_delegue') echo 'selected'; ?>>role_delegue</option>
                 <option value="role_responsable" <?php if ($user['role'] == 'role_responsable') echo 'selected'; ?>>role_responsable</option>

@@ -12,6 +12,7 @@
 <body>
 <div class="container">
     <h2>Ajouter un médecin</h2>
+    <a href="../index.php">Page d'accueil</a>
     <form action="../Model/ajouter-medecin.php" method="post">
         <div class="form-group">
             <label for="nomMedecin">Nom du médecin</label>

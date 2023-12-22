@@ -39,6 +39,25 @@
                 </div>
             </div>
         </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Modification des Utilisateurs</h5>
+                    <p class="card-text">Administrez les utilisateurs de l'application.</p>
+                    <a href="save-user.php" class="btn btn-primary btn-block">Accéder</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Créer des utilisateurs</h5>
+                    <p class="card-text">Créez des comptes Utilisateurs, Administrateurs, Délégués, Responsables et
+                        Praticiens.</p>
+                    <a href="inscription.php" class="btn btn-primary btn-block">Accéder</a>
+                </div>
+            </div>
+        </div>
     </div>
     <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
 </div>

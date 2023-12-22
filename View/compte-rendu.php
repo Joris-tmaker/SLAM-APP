@@ -12,6 +12,7 @@
 <body>
     <div class="container">
         <h2>Compte-Rendu de Visite</h2>
+        <a href="../index.php">Page d'accueil</a>
         <form action="../Model/traitement_formulaire.php" method="post">
             <div class="form-group">
                 <label for="date_visite">Date de la Visite :</label>
