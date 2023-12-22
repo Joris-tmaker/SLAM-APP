@@ -53,6 +53,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste des Contre-Visites</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/style-formulaire.css">
     <style>
         h1, h2 {
             text-align:left;
@@ -84,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 <body>
     <h1>Liste des Contre-Visites</h1>
+    <a href="../index.php">Page d'accueil</a>
 
     <!-- Formulaire pour filtrer par région -->
     <form method="post">
@@ -100,9 +103,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <!-- Affichage des contre-visites par défaut -->
     <?php if (!$filterApplied) : ?>
         <h2>Toutes les contre-visites :</h2>
-        <div class="cards-container">
+        <div class="grid-container">
             <?php foreach ($contreVisitesAll as $contreVisite) : ?>
-                <div class="card">
+                <div class="grid-item">
                     <h3><?= $contreVisite['nom_du_praticien']; ?></h3>
                     <p><strong>Date de la Visite:</strong> <?= $contreVisite['date_de_la_visite']; ?></p>
                     <p><strong>Date de Contre-Visite:</strong> <?= $contreVisite['date_de_contre_visite']; ?></p>

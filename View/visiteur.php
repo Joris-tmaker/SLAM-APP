@@ -30,15 +30,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Modifier vos Comptes-Rendus</h5>
-                    <p class="card-text">Modifiez vos comptes-rendus de visite existants.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
-                </div>
-            </div>
-        </div>
     </div>
     <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
 </div>
