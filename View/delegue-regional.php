@@ -55,7 +55,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter les Contre-Visites Prévues</h5>
                     <p class="card-text">Consultez les contre-visites prévues pour votre région.</p>
-                    <a href="#" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="../View/contre-visite.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
