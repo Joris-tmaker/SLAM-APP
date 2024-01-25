@@ -21,6 +21,19 @@ if (!empty($_SESSION['user'])) {
             exit;
     }
 } else {
-    header('Location: View/V-Connexion.php');
-    exit;
+    echo '<a href="View/V-Connexion.php" class="btn-index">Connexion</a>';
 }
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style-formulaire.css">
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

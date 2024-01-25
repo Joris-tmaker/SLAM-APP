@@ -42,6 +42,21 @@ h2 {
     background: #C56752;
 }
 
+.btn-index {
+    background-color: #5BB4A9;
+    border: none;
+    margin: 15px auto 15px auto;
+    width: 20%;
+    padding: 20px 5px;
+    border-radius: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
 /* Style des étiquettes */
 label {
     font-weight: bold;
