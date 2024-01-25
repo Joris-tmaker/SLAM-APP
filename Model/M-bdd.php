@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$bdname = 'compterendu';
+$bdname = 'gsbcr_compterendu';
 $user = 'root';
 $mdp = '';
 $charset = 'utf8';

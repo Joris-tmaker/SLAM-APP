@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../assets/style-formulaire.css">
 </head>
 <body>
+<img src="../img/logo.png" alt="">
 <div class="container">
     <h2 class="text-center">Tableau de Bord du Visiteur Médical</h2>
     <div class="row justify-content-center">
