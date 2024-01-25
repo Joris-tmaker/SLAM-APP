@@ -17,10 +17,10 @@ if (!empty($_SESSION['user'])) {
             header('Location: Controller/VisiteurController.php');
             exit;
         default:
-            header('Location: View/connexion.php'); // Redirection par défaut si le rôle n'est pas géré
+            header('Location: View/M-V-Connexion.php'); // Redirection par défaut si le rôle n'est pas géré
             exit;
     }
 } else {
-    header('Location: View/connexion.php');
+    header('Location: View/V-Connexion.php');
     exit;
 }

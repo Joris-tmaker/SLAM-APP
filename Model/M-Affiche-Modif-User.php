@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'bdd.php';
+require_once 'M-bdd.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
     $userId = $_GET["id"];
@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
 <div class="container">
     <h2 class="text-center">Modifier Utilisateur</h2>
 
-    <form action="edit-user-process.php" method="post">
+    <form action="M-Modif-User.php" method="post">
         <input type="hidden" name="id_user" value="<?php echo $user['id_user']; ?>">
 
         <div class="form-group">

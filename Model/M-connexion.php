@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 // Si l'utilisateur est déjà connecté, rediriger
 if (!empty($_SESSION['user'])) {

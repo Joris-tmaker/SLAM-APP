@@ -3,6 +3,10 @@ body {
     background-color: #C56752;
 }
 
+body img {
+    width: 10%;
+}
+
 .container {
     background-color: #FFFF;
     width: 50%;

@@ -1,2 +1,2 @@
 <?php
-header('Location: ../View/visiteur.php');
+header('Location: ../View/V-Visiteur.php');

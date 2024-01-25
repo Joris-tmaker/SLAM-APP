@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 if (isset($_SESSION['user'])) {
     if (isset($_GET['id'])) {
@@ -18,7 +18,7 @@ if (isset($_SESSION['user'])) {
             $compteRendu = $stmt->fetch(PDO::FETCH_ASSOC);
 
             // Afficher le formulaire prérempli avec les données du compte rendu
-            include "../View/compte-rendu-modif.php";
+            include "../View/V-Modif-CR.php";
             ?>
             <script>
                 // Pré-remplir le formulaire avec les données récupérées

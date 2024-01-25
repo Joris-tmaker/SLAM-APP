@@ -12,10 +12,8 @@
 <body>
     <div class="container">
         <h2>Compte-Rendu de Visite</h2>
-        <form action="../Model/traitement_modification.php" method="post">
-            <div class="form-group">
-                <input type="hidden" name="id_cr_cp" value="<?php echo isset($_GET['id']) ? htmlspecialchars($_GET['id']) : ''; ?>">
-            </div>
+        <a href="../index.php">Page d'accueil</a>
+        <form action="../Model/M-Ajout-CR.php" method="post">
             <div class="form-group">
                 <label for="date_visite">Date de la Visite :</label>
                 <input type="date" class="form-control" id="dateVisite" name="dateVisite">
@@ -52,7 +50,7 @@
                 <label for="quantiteDistribuee">Quantité distribuée :</label>
                 <input type="number" class="form-control" id="quantiteDistribuee" name="quantiteDistribuee">
             </div>
-            <button type="submit" class="btn btn-primary">Modification</button>
+            <button type="submit" class="btn btn-primary">Enregistrer</button>
         </form>
     </div>
 

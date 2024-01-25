@@ -1,2 +1,2 @@
 <?php
-header('Location: ../View/responsable.php');
+header('Location: ../View/V-Responsable.php');

@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Consulter vos Comptes-Rendus</h5>
                     <p class="card-text">Consultez vos propres comptes-rendus de visite.</p>
-                    <a href="affiche-cr.php" class="btn btn-primary btn-block">Accéder</a>
+                    <a href="V-Affiche-CR.php" class="btn btn-primary btn-block">Accéder</a>
                 </div>
             </div>
         </div>
@@ -26,12 +26,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Créer de nouveaux Comptes-Rendus</h5>
                     <p class="card-text">Créez de nouveaux comptes-rendus de visite.</p>
-                    <a href="compte-rendu.php" class="btn btn-primary btn-block">Créer</a>
+                    <a href="V-Ajout-CR.php" class="btn btn-primary btn-block">Créer</a>
                 </div>
             </div>
         </div>
     </div>
-    <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
+    <a class="btn-primary" href="../Model/M-Logout.php">Déconnexion</a>
 </div>
 
 <!-- Inclure les fichiers JavaScript de Bootstrap -->

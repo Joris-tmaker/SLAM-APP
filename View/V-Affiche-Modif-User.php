@@ -18,7 +18,7 @@
     <h2 class="text-center">Modification d'utilisateur</h2>
         <a href="../index.php">Page d'accueil</a>
     <?php
-    require_once "../Model/save-user.php";
+    require_once "../Model/M-Tableau-Affichage-User.php";
     ?>
 
 

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php"; // Assurez-vous que ce fichier contient la connexion à votre base de données
+require_once "M-bdd.php"; // Assurez-vous que ce fichier contient la connexion à votre base de données
 
 // Fonction pour afficher tous les comptes rendus
 function afficherTousComptesRendus($connexion)

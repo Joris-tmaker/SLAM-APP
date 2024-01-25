@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modification d'utilisateur</title>
+    <title>Tous les CR</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style-formulaire.css">
     <style>
@@ -26,11 +26,11 @@
 <body>
 
 <div class="container">
-    <h2 class="text-center">Tous les médecins</h2>
+    <h2 class="text-center">Tous les comptes rendus</h2>
     <a href="../index.php">Page d'accueil</a>
     <br>
     <?php
-    require_once "../Model/afficher-medecin.php";
+    require_once "../Model/M-Affiche-Tout-CR.php";
     ?>
 </div>
 

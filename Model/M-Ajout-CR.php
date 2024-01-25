@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer l'id de l'utilisateur depuis la session

@@ -1,2 +1,2 @@
 <?php
-header('Location: ../View/delegue-regional.php');
+header('Location: ../View/V-Delegue-Regional.php');

@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 if (isset($_SESSION['user'])) {
     $idUser = $_SESSION['user']['id_user'];

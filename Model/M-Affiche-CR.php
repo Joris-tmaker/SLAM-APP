@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php"; // Assurez-vous que ce fichier contient la connexion à votre base de données
+require_once "M-bdd.php"; // Assurez-vous que ce fichier contient la connexion à votre base de données
 
 // Vérifier si l'utilisateur est connecté
 if (isset($_SESSION['user'])) {
@@ -26,7 +26,7 @@ if (isset($_SESSION['user'])) {
             echo "<p><strong>Produit:</strong> " . $row['produit'] . "</p>";
             echo "<p><strong>Refus:</strong> " . ($row['refus'] ? 'Oui' : 'Non') . "</p>";
             echo "<p><strong>Quantité Distribuée:</strong> " . $row['quantite_distribuee'] . "</p>";
-            echo '<a href="../Model/modifier-cr.php?id=' . $row['id_cr_cp'] . '">Modifier</a>';
+            echo '<a href="../Model/M-Affiche-Modif-CR.php?id=' . $row['id_cr_cp'] . '">Modifier</a>';
 
             echo '</div>'; // Fin d'un élément carré
         }

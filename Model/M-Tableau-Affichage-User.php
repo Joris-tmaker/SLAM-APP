@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 // Récupération des utilisateurs depuis la base de données
 $sql = "SELECT id_user, nom, prenom, role, id_region FROM user";
@@ -26,7 +26,7 @@ if ($result->rowCount() > 0) {
         echo '<td>' . $row['prenom'] . '</td>';
         echo '<td>' . $row['role'] . '</td>';
         echo '<td>' . $row['id_region'] . '</td>';
-        echo '<td><a class="btn" href="../Model/edit-user-form.php?id=' . $row['id_user'] . '">Modifier</a></td>';
+        echo '<td><a class="btn" href="../Model/M-Affiche-Modif-User.php?id=' . $row['id_user'] . '">Modifier</a></td>';
         echo '</tr>';
     }
 

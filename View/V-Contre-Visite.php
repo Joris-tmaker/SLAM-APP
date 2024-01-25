@@ -1,5 +1,5 @@
 <?php
-require_once('../Model/bdd.php');
+require_once('../Model/M-bdd.php');
 
 // Récupérer la liste des régions
 $queryRegions = "SELECT * FROM region";

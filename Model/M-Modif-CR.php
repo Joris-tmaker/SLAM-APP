@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user'])) {
     // Récupérer les valeurs du formulaiid_cr_cpre
@@ -43,10 +43,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_SESSION['user'])) {
     // Exécution de la requête
     if ($stmt->execute()) {
         echo "Les modifications ont été enregistrées avec succès.";
+        header("Location: ../View/V-Affiche-CR.php");
     } else {
         echo "Erreur lors de l'enregistrement des modifications : " . $stmt->errorInfo()[2];
     }
-    header("Location: ../View/affiche-cr.php?id=$id_cr_cp");
+
 } else {
     echo "Une erreur s'est produite lors du traitement du formulaire.";
 }

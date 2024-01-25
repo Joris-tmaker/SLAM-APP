@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once "bdd.php";
+require_once "M-bdd.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id_user = $_SESSION['user']['id_user'];
@@ -17,5 +17,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $stmt = $connexion->prepare($requete);
     $stmt->execute([$id_user, $nomMedecin, $specialite, $coordonnee]);
 
-    header("Location: ../View/afficher-medecin.php");
+    header("Location: ../View/V-Afficher-Medecin.php");
 }

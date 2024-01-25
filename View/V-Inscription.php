@@ -1,6 +1,6 @@
 <?php session_start();
 
-require_once '../Model/bdd.php'?>
+require_once '../Model/M-bdd.php' ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -13,7 +13,7 @@ require_once '../Model/bdd.php'?>
 <div id="utilisateur" class="main">
     <img src="../img/cadenas%20(1).png" alt="" class="locker">
     <h1>Ajout utilisateur</h1>
-    <form action="../Model/inscription.php" method="post">
+    <form action="../Model/M-Inscription.php" method="post">
 
         <input class="pass" placeholder="Nom" type="text" id="nom" name="nom" required><br><br>
 

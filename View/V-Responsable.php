@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="../assets/style-formulaire.css">
     </head>
     <body>
+    <img src="../img/logo.png" alt="">
     <div class="container">
         <h2 class="text-center">Tableau de Bord du Responsable de Secteur</h2>
         <div class="row justify-content-center">
@@ -17,7 +18,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Consulter tous les Comptes-Rendus</h5>
                         <p class="card-text">Consultez les comptes-rendus de visite.</p>
-                        <a href="affiche-tout-cr.php" class="btn btn-primary btn-block">Accéder</a>
+                        <a href="V-Affiche-Tout-CR.php" class="btn btn-primary btn-block">Accéder</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Modification des Utilisateurs</h5>
                         <p class="card-text">Administrez les utilisateurs de l'application.</p>
-                        <a href="save-user.php" class="btn btn-primary btn-block">Accéder</a>
+                        <a href="V-Affiche-Modif-User.php" class="btn btn-primary btn-block">Accéder</a>
                     </div>
                 </div>
             </div>
@@ -54,12 +55,12 @@
                         <h5 class="card-title">Créer des utilisateurs</h5>
                         <p class="card-text">Créez des comptes Utilisateurs, Administrateurs, Délégués, Responsables et
                             Praticiens.</p>
-                        <a href="inscription.php" class="btn btn-primary btn-block">Accéder</a>
+                        <a href="V-Inscription.php" class="btn btn-primary btn-block">Accéder</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="btn-primary" href="../Model/logout.php">Déconnexion</a>
+        <a class="btn-primary" href="../Model/M-Logout.php">Déconnexion</a>
     </div>
 
     <!-- Inclure les fichiers JavaScript de Bootstrap -->

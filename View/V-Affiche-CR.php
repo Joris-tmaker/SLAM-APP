@@ -30,7 +30,7 @@
     <a href="../index.php">Page d'accueil</a>
     <br>
     <?php
-    require_once "../Model/affiche-cr.php";
+    require_once "../Model/M-Affiche-CR.php";
     ?>
 </div>
 
