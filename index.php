@@ -21,7 +21,10 @@ if (!empty($_SESSION['user'])) {
             exit;
     }
 } else {
+    echo '<div id="btn-index">';
+    echo '<img src="img/logo.png">';
     echo '<a href="View/V-Connexion.php" class="btn-index">Connexion</a>';
+    echo '</div>';
 }
 ?>
 <!DOCTYPE html>

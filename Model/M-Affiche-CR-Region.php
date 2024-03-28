@@ -1,6 +1,5 @@
 <?php
 
-session_start();
 require_once "M-bdd.php"; // Assurez-vous que ce fichier contient la connexion à votre base de données
 
 if (isset($_SESSION['user'])) {

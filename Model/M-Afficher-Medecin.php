@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once "M-bdd.php";
 
 if (isset($_SESSION['user'])) {

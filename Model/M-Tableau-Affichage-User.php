@@ -1,5 +1,4 @@
 <?php
-session_start();
 require_once "M-bdd.php";
 
 // Récupération des utilisateurs depuis la base de données

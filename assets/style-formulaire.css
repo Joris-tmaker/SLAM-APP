@@ -42,7 +42,19 @@ h2 {
     background: #C56752;
 }
 
-.btn-index {
+#btn-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#btn-index img {
+    width: 20%;
+}
+
+a.btn-index {
     background-color: #5BB4A9;
     border: none;
     margin: 15px auto 15px auto;
@@ -57,6 +69,11 @@ h2 {
     color: white;
 }
 
+a.btn-index:hover {
+    background-color: #36968a;
+    transition: all 0.2s ease-in;
+}
+
 /* Style des étiquettes */
 label {
     font-weight: bold;
@@ -67,4 +84,40 @@ textarea.form-control {
     resize: none; /* Empêche le redimensionnement de la zone de texte */
 }
 
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+}
 
+section #gauche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    min-height: 100%;
+    background-color: #5BB4A9;
+    padding: 1%;
+}
+
+section #gauche img{
+    width: 100%;
+}
+
+section #gauche .head-gauche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+section #gauche .nav-link {
+    color: black;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+section #droite {
+    width: 80%;
+}
