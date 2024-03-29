@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/9a8c46dc52.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modification d'utilisateur</title>
@@ -29,80 +30,80 @@
 <section>
     <div id="gauche">
         <?php
-        // Vérifier le type d'utilisateur
         if (isset($_SESSION['user']['id_user']) && $_SESSION['user']['id_user'] === 8) {
             echo "<div class='head-gauche'>";
             echo "<img src='../img/logo.png' alt='Logo'>";
-            echo "<h5>Application de gestion de compte rendu</h5>";
             echo "</div>";
             echo "<ul class='nav flex-column'>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Affiche-CR.php'>Consulter mes comptes rendus</a>";
+            echo "<a class='nav-link' href='V-Affiche-CR.php'><i class='fa-regular fa-file' style='color: #C56752;'></i>Mes comptes rendus</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='#'>Echantillons</a>";
+            echo "<a class='nav-link' href='#'><i class='fa-solid fa-vials' style='color: #C56752;'></i>Echantillons</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Affiche-Modif-User.php'>Modification des Utilisateurs</a>";
+            echo "<a class='nav-link' href='V-Affiche-Modif-User.php'><i class='fa-regular fa-pen-to-square' style='color: #C56752;'></i>Modification utilisateurs</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Inscription.php'>Créer des utilisateurs</a>";
+            echo "<a class='nav-link' href='V-Inscription.php'><i class='fa-solid fa-plus' style='color: #C56752;'></i>Créer utilisateurs</a>";
             echo "</li>";
             echo "</ul>";
             echo "<a class='btn btn-primary' href='../Model/M-Logout.php'>Déconnexion</a>";
+            echo "<p>© GSB 2024. Droits réservés.</p>";
         } elseif (isset($_SESSION['user']['id_user']) && $_SESSION['user']['id_user'] === 9) {
             echo "<div class='head-gauche'>";
             echo "<img src='../img/logo.png' alt='Logo'>";
-            echo "<h5>Application de gestion de compte rendu</h5>";
             echo "</div>";
             echo "<ul class='nav flex-column'>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Affiche-CR.php'>Consulter mes comptes rendus</a>";
+            echo "<a class='nav-link' href='V-Affiche-CR.php'><i class='fa-regular fa-file' style='color: #C56752;'></i>Mes comptes rendus</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Ajout-CR.php'>Nouveaux comptes rendus</a>";
+            echo "<a class='nav-link' href='V-Ajout-CR.php'><i class='fa-solid fa-plus' style='color: #C56752;'></i>Nouveaux comptes-rendus</a>";
             echo "</li>";
             echo "</ul>";
             echo "</ul>";
             echo "<a class='btn btn-primary' href='../Model/M-Logout.php'>Déconnexion</a>";
+            echo "<p>© GSB 2024. Droits réservés.</p>";
         } elseif
         (isset($_SESSION['user']['id_user']) && $_SESSION['user']['id_user'] === 10) {
             echo "<div class='head-gauche'>";
             echo "<img src='../img/logo.png' alt='Logo'>";
-            echo "<h5>Application de gestion de compte rendu</h5>";
             echo "</div>";
             echo "<ul class='nav flex-column'>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Affiche-CR.php'>Consulter mes comptes rendus</a>";
+            echo "<a class='nav-link' href='V-Affiche-CR.php'><i class='fa-regular fa-file' style='color: #C56752;'></i>Mes comptes rendus</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Affiche-CR-Region.php'>Consulter les comptes rendus de régions</a>";
+            echo "<a class='nav-link' href='V-Affiche-CR-Region.php'><i class='fa-solid fa-file' style='color: #C56752;'></i>Comptes rendus de régions</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Ajout-CR.php'>Créer de Nouveaux Comptes-Rendus</a>";
+            echo "<a class='nav-link' href='V-Ajout-CR.php'><i class='fa-solid fa-plus' style='color: #C56752;'></i>Nouveaux comptes-rendus</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Contre-Visite.php'>Consulter les Contre-Visites Prévues</a>";
+            echo "<a class='nav-link' href='V-Contre-Visite.php'><i class='fa-solid fa-eye' style='color: #C56752;'></i>Contre-Visites</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Ajouter-Medecin.php'>Ajouter un nouveau médecin</a>";
+            echo "<a class='nav-link' href='V-Ajouter-Medecin.php'><i class='fa-regular fa-plus' style='color: #C56752;'></i>Nouveau médecin</a>";
             echo "</li>";
             echo "<li class='nav-item'>";
-            echo "<a class='nav-link' href='V-Afficher-Medecin.php'>Afficher les médecins</a>";
+            echo "<a class='nav-link' href='V-Afficher-Medecin.php'><i class='fa-solid fa-head-side-mask' style='color: #C56752;'></i>Médecins</a>";
             echo "</li>";
             echo "</ul>";
             echo "<a class='btn btn-primary' href='../Model/M-Logout.php'>Déconnexion</a>";
+            echo "<p>© GSB 2024. Droits réservés.</p>";
         }
         ?>
     </div>
 
-    <div class="container" id="droite">
-        <h2 class="text-center">Mes comptes Rendus</h2>
-        <a href="../index.php">Page d'accueil</a>
-        <br>
-        <?php
-        require_once "../Model/M-Affiche-CR.php";
-        ?>
+    <div id="droite">
+        <div class="container-fluid">
+            <h2 class="text-center">Mes comptes Rendus</h2>
+            <br>
+            <?php
+            require_once "../Model/M-Affiche-CR.php";
+            ?>
+        </div>
     </div>
 </section>
 
