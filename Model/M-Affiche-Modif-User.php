@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET["id"])) {
         }
         ?>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <h2 class="text-center">Modifier Utilisateur</h2>
 
         <form action="M-Modif-User.php" method="post">
