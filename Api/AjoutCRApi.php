@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if (isset($_POST["id_user"])) {
         $idUser = $_POST["id_user"];
         $dateVisite = $_POST["date_de_la_visite"];
-        $dateContreVisite = $_POST["date_de_la_contre_visite"];
+        $dateContreVisite = $_POST["date_de_contre_visite"];
         $motifVisite = $_POST["motif_de_la_visite"];
         $remarques = $_POST["remarques"];
         $nomPraticien = $_POST["nom_du_praticien"];
