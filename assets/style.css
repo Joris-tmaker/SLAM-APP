@@ -114,3 +114,13 @@ h1 {
     transition: 1s;
     transition: color 1s ease;
 }
+
+@media (max-width: 767px) {
+    .main {
+        width: 80%;
+    }
+
+    .locker {
+        width: 40%;
+    }
+}

@@ -61,7 +61,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         h1, h2 {
-            text-align:left;
+            text-align: left;
         }
 
         .cards-container {
@@ -93,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php include 'gauche.php'; ?>
     <div id="droite">
         <div class="container-fluid">
-            <h1>Liste des Contre-Visites</h1>
+            <h1>Liste des Comptes Rendus par Région</h1>
 
             <form method="post">
                 <label for="region">Filtrer par région :</label>
@@ -106,33 +106,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit">Filtrer</button>
             </form>
 
-            <?php if (!$filterApplied) : ?>
-                <h2>Toutes les contre-visites :</h2>
-                <div class="grid-container">
-                    <?php foreach ($contreVisitesAll as $contreVisite) : ?>
-                        <div class="grid-item">
-                            <h3><?= $contreVisite['nom_du_praticien']; ?></h3>
-                            <p><strong>Date de la Visite:</strong> <?= $contreVisite['date_de_la_visite']; ?></p>
-                            <p><strong>Date de Contre-Visite:</strong> <?= $contreVisite['date_de_contre_visite']; ?></p>
-                            <p><strong>Motif:</strong> <?= $contreVisite['motif_de_la_visite']; ?></p>
-                            <p><strong>Nom de l'Utilisateur:</strong> <?= $contreVisite['nom_utilisateur'] . ' ' . $contreVisite['prenom_utilisateur']; ?></p>
-                            <p><strong>Région:</strong> <?= $contreVisite['region']; ?></p>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            <?php endif; ?>
-
             <!-- Affichage des contre-visites filtrées par région -->
             <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && $contreVisitesFiltered) : ?>
-                <h2>Contre-visites filtrées par région :</h2>
+                <h2>Comptes Rendus par région :</h2>
                 <div class="cards-container">
                     <?php foreach ($contreVisitesFiltered as $contreVisite) : ?>
                         <div class="card">
                             <h3><?= $contreVisite['nom_du_praticien']; ?></h3>
                             <p><strong>Date de la Visite:</strong> <?= $contreVisite['date_de_la_visite']; ?></p>
-                            <p><strong>Date de Contre-Visite:</strong> <?= $contreVisite['date_de_contre_visite']; ?></p>
+                            <p><strong>Date de Contre-Visite:</strong> <?= $contreVisite['date_de_contre_visite']; ?>
+                            </p>
                             <p><strong>Motif:</strong> <?= $contreVisite['motif_de_la_visite']; ?></p>
-                            <p><strong>Nom de l'Utilisateur:</strong> <?= $contreVisite['nom_utilisateur'] . ' ' . $contreVisite['prenom_utilisateur']; ?></p>
+                            <p><strong>Nom de
+                                    l'Utilisateur:</strong> <?= $contreVisite['nom_utilisateur'] . ' ' . $contreVisite['prenom_utilisateur']; ?>
+                            </p>
                             <p><strong>Région:</strong> <?= $contreVisite['region']; ?></p>
                         </div>
                     <?php endforeach; ?>

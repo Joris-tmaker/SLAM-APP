@@ -4,7 +4,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../assets/style.css">
-    <link rel="stylesheet" href="../assets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page de Connexion</title>
 </head>
 <body>
@@ -19,7 +19,6 @@
 
         <input class="btn" type="submit" name="submit" value="Connexion">
     </form>
-    <a href="../Model/M-Logout.php">Déconnexion</a>
 </div>
 </body>
 </html>

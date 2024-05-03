@@ -8,7 +8,6 @@
     <title>CR Région</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style-formulaire.css">
-    <link rel="stylesheet" href="../assets/responsive.css">
     <style>
         .grid-container {
             display: grid;
@@ -29,12 +28,14 @@
 <body>
 <section>
     <?php include 'gauche.php'; ?>
-    <div class="container-fluid">
-        <h2 class="text-center">Les comptes Rendus de Régions</h2>
-        <br>
-        <?php
-        require_once "../Model/M-Affiche-CR-Region.php";
-        ?>
+    <div id="droite">
+        <div class="container-fluid">
+            <h2 class="text-center">Les comptes Rendus de Régions</h2>
+            <br>
+            <?php
+            require_once "../Model/M-Affiche-CR-Region.php";
+            ?>
+        </div>
     </div>
 </section>
 

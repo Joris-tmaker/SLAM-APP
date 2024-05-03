@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Lier votre fichier CSS personnel -->
     <link rel="stylesheet" href="../assets/style-formulaire.css">
-    <link rel="stylesheet" href="../assets/responsive.css">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <section>
@@ -58,7 +56,6 @@
                     <input type="number" class="form-control" id="quantiteDistribuee" name="quantiteDistribuee">
                 </div>
                 <button type="submit" class="btn btn-primary">Modification</button>
-                <a class='btn btn-primary' href='../Model/M-Logout.php'>Déconnexion</a>
             </form>
         </div>
     </div>

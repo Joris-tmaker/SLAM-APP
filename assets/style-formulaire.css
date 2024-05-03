@@ -154,6 +154,21 @@ section #droite {
     height: 100%;
 }
 
+.btn-modif {
+    background-color: #5bb4a9;
+    padding: 3px 12px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-modif:hover {
+    background-color: #3e8c82;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in;
+}
+
+
 @media (max-width: 767px) {
     #btn-index img {
         width: 50%;
@@ -162,5 +177,31 @@ section #droite {
     a.btn-index {
         width: 50%;
         font-size: 25px;
+    }
+
+
+    section {
+        flex-direction: column;
+    }
+
+    section #gauche{
+        width: 100%;
+        position: relative;
+        box-shadow: none;
+    }
+
+    section #droite{
+        width: 95%;
+        position: relative;
+        box-shadow: none;
+    }
+
+    .container-fluid {
+        width: 100%;
+        margin: 10px;
+    }
+
+    .btn-primary {
+        margin: 20px 0;
     }
 }

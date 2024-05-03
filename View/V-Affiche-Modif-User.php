@@ -8,20 +8,20 @@
     <title>Modification d'utilisateur</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/style-formulaire.css">
-    <link rel="stylesheet" href="../assets/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     </style>
 </head>
 <body>
 <section>
     <?php include 'gauche.php'; ?>
-    <div class="container-fluid">
-        <h2 class="text-center">Modification des utilisateurs</h2>
-        <?php
-        require_once "../Model/M-Tableau-Affichage-User.php";
-        ?>
-
-
+    <div id="droite">
+        <div class="container-fluid">
+            <h2 class="text-center">Modification des utilisateurs</h2>
+            <?php
+            require_once "../Model/M-Tableau-Affichage-User.php";
+            ?>
+        </div>
     </div>
 </section>
 

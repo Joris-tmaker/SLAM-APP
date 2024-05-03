@@ -7,10 +7,10 @@
         echo "</div>";
         echo "<ul class='nav flex-column'>";
         echo "<li class='nav-item'>";
-        echo "<a class='nav-link' href='V-Affiche-CR.php'><i class='fa-regular fa-file' style='color: #C56752;'></i>Mes comptes rendus</a>";
+        echo "<a class='nav-link' href='V-Affiche-CR-Region-Resp.php'><i class='fa-regular fa-file' style='color: #C56752;'></i>Comptes rendus par régions</a>";
         echo "</li>";
         echo "<li class='nav-item'>";
-        echo "<a class='nav-link' href='#'><i class='fa-solid fa-vials' style='color: #C56752;'></i>Echantillons</a>";
+        echo "<a class='nav-link' href='V-Statistiques.php'><i class='fa-solid fa-chart-column' style='color: #c56752;'></i>Statistiques</a>";
         echo "</li>";
         echo "<li class='nav-item'>";
         echo "<a class='nav-link' href='V-Affiche-Modif-User.php'><i class='fa-regular fa-pen-to-square' style='color: #C56752;'></i>Modification utilisateurs</a>";
