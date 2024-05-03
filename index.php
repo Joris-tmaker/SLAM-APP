@@ -24,7 +24,7 @@ if (!empty($_SESSION['user'])) {
     echo '<div id="btn-index">';
     echo '<img src="img/logo.png">';
     echo '<a href="View/V-Connexion.php" class="btn-index">Connexion</a>';
-    echo '<a href="app-debug.apk" class="apk">Download APK mobile</a>';
+    echo '<a href="app-gsb.apk" class="apk">Download APK mobile</a>';
     echo '</div>';
 }
 ?>
