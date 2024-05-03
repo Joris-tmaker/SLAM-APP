@@ -97,7 +97,7 @@ section {
     min-height: 100vh;
 }
 
-section h1{
+section h1 {
     color: #3a3939;
     font-size: 25px;
     text-align: right;
@@ -112,19 +112,18 @@ section #gauche {
     min-height: 100%;
     background-color: #5BB4A9;
     padding: 1%;
-
     box-shadow: 2px 0 20px black;
     position: fixed;
     left: 0;
 }
 
-section #gauche p{
+section #gauche p {
     font-size: 10px;
     font-style: italic;
     text-align: center;
 }
 
-section #gauche img{
+section #gauche img {
     width: 70%;
 }
 
@@ -146,11 +145,22 @@ section #gauche .nav-link:hover {
     transition: all 0.2s ease-in;
 }
 
-section #gauche .nav-link i{
+section #gauche .nav-link i {
     margin-right: 10px;
 }
 
 section #droite {
     width: 80%;
     height: 100%;
+}
+
+@media (max-width: 767px) {
+    #btn-index img {
+        width: 50%;
+    }
+
+    a.btn-index {
+        width: 50%;
+        font-size: 25px;
+    }
 }

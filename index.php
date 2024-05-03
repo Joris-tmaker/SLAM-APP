@@ -24,6 +24,7 @@ if (!empty($_SESSION['user'])) {
     echo '<div id="btn-index">';
     echo '<img src="img/logo.png">';
     echo '<a href="View/V-Connexion.php" class="btn-index">Connexion</a>';
+    echo '<a href="app-debug.apk" class="apk">Download APK mobile</a>';
     echo '</div>';
 }
 ?>
@@ -33,6 +34,7 @@ if (!empty($_SESSION['user'])) {
     <title>Index</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style-formulaire.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

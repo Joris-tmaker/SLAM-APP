@@ -4,6 +4,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../assets/responsive.css">
     <title>Page de Connexion</title>
 </head>
 <body>
